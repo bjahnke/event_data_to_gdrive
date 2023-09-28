@@ -36,7 +36,6 @@ def handle_request():
     This is the main function that will be called by the cloud function.
     :return:
     """
-    # TODO get data from event data
     engine = create_engine(env.PLANETSCALE_URL)
     mongo_client = pymongo.MongoClient(env.MONGO_URL)
     sg_client = scalpyr.ScalpyrPro(env.SEATGEEK_CLIENT_ID)
